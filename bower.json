@@ -1,0 +1,12 @@
+{
+  "name": "dojoquest",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+      "dojo": "y",
+      "dijit": "y",
+      "dojox": "y",
+      "dgrid": "~0.3.10",
+      "util": "dojo-util#y"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dojo Application</title>
+
+    <!--Style sheets-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="resources/dijit/themes/dijit.css"/>
+    <link rel="stylesheet" href="resources/dijit/themes/claro/claro.css"/>
+
+    <!--dojo Config and bootstrap-->
+    <script src="dojoConfig.js"></script>
+    <script src="resources/dojo/dojo.js"></script>
+    <script>
+        // Creating our main service which is dojoquest
+        require(["controller",
+            "layout",
+            "menu" ,
+            "notificationService",
+            "dojo/domReady!"],
+                function(controller, layout, menu, notificationService) {
+                    if(controller
+                            && layout
+                            && menu
+                            && notificationService) {
+                        console.log("Application is initialized");
+                        controller.init();
+                    }
+                });
+
+    </script>
+
+</head>
+<body class="claro">
+<div id="overlay">Loading...</div>
+<div id="appLayout"></div>
+</body>
+</html>
